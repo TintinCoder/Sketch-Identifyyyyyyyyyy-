@@ -1,0 +1,51 @@
+/*Importing A Font From Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    background-color: lightpink;
+}
+
+#showSketch {
+    float: right;
+    margin-right: 60px;
+}
+
+#content{
+    margin: 50px;
+    width: auto;
+    height: auto;
+}
+
+.heading {
+    color: cadetblue;
+    font-weight: bolder;
+    margin-left: 200px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 20px; */
+}
+
+canvas {
+    margin-top: 190px;
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+    from {
+        border: 0px solid black;
+        box-shadow: 1px 1px 38px grey;
+    }
+    to {
+        border: 4px solid black;
+        box-shadow: 1px 1px 38px #fff;
+    }
+}
